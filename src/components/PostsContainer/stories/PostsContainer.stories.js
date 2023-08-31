@@ -1,7 +1,6 @@
 import PostContainer from "../PostsContainer";
 import { faker } from "@faker-js/faker";
 
-
 export default {
     title: "Posts/Muchos Posts",
     component: PostContainer,
