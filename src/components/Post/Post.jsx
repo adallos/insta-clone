@@ -1,25 +1,25 @@
 import "./Post.css";
 
-function Post(){
+function Post({username, name, photo, profilePic}){
     return(
         <article className="Post">
             <header>
                 <div className="Post-user">
                     <div className="Post-user-profilepicture">
-                    <img src="https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg" alt="John D. Veloper" />
+                    <img src={profilePic} alt="John D. Veloper" />
                 </div>
                 <div className="Post-user-nickname">
-                    <span>John Doe</span>
+                    <span>{username}</span>
                 </div>
                 </div>
             </header>
             <div className="Post-image">
                 <div className="Post-image-bg">
-                    <img alt="Icon Living" src="https://cdn-images-1.medium.com/max/1200/1*dMSWcBZCuzyRDeMr4uE_og.png" />
+                    <img alt="Icon Living" src={photo} />
                 </div>
             </div>
             <div className="Post-caption">
-                <strong>John D. Veloper </strong> Loving Educative!
+                <strong>{name} </strong> Loving Educative!
             </div>
 
         </article>

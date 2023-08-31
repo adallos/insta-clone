@@ -1,14 +1,14 @@
 import "./Story.css";
 
-function Story({profilePic, username}){
+function Story({username, image, variacion}){
   return (
     <div className="story">
       <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmTWiq4hLhWqSuzboLCNO0sMMKO2gxXvm1w&usqp=CAU"
-      alt="user"
-      className="story-image"
+        src={image}
+        alt="user"
+        className={`story-image-${variacion}`}
       />
-      <p>Instagram User</p>
+      <p className="story-name">{username}</p>
     </div>
   );
 }

@@ -10,7 +10,7 @@ function App() {
     <>
       <Header/>
       <h1>Clon de Instagram aquí!</h1>
-      {/* <Post/> */}
+      <Post/>
       <NavItem
         icon="https://cdn-icons-png.flaticon.com/128/9454/9454103.png"
         action="Search"
