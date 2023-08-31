@@ -4,7 +4,7 @@ import { faker } from "@faker-js/faker";
 //config
 export default {
     title: "Posts/Un Solo Post",
-    component: Post
+    component: Post,
 }
 
 export const InstaStory = {
